@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My project title</title>
+    <title>Verkoop electrische auto's</title>
     <link rel="shortcut icon" type="image/png" href="/assets/favicon.png">
     <link rel="stylesheet" href="style.css">
     <!-- <script src="CDN library url"></script> -->
     <script defer src="main.js"></script>
 </head>
 <body>
+
+
     <div>
         <canvas id="myChart"></canvas>
+
+        <img scr="assets/auto.png" id="wagie">
       </div>
       
       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -22,10 +26,10 @@
         new Chart(ctx, {
           type: 'bar',
           data: {
-            labels: ['1', '2', '3', '4', '5', '6'],
+            labels: ['2018', '2019', '2020', '2021', '2022', '2023'],
             datasets: [{
-              label: '# of Votes',
-              data: [12, 19, 3, 5, 2, 7],
+              label: '# Aantal electrische autos verkocht in Europa',
+              data: [195000, 375000, 739000, 1200000, 2600000, 1500000],
               borderWidth: 1
             }]
           },
